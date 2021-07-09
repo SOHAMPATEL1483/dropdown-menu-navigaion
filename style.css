@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:  Verdana, sans-serif;
+    background-color: rgb(114, 223, 129);
+
+}
+.home a{
+    color: black;
+}
+.dropdown{
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+
+
+}
+.products .projects{
+    position: relative;
+}
+.products ul , .projects ul{
+    position: absolute;
+   margin-top: 10px; 
+   background-color: white;
+   border-radius: 7px;
+    list-style: none;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 200ms ease;
+}
+
+.projects button:focus + ul ,.products button:focus + ul {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+}
+
+.products ul a , .projects ul a{
+    text-decoration: none;
+
+}
+.products li , .projects li{
+    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ .projects li:hover , .products li:hover{
+    
+    background-color: rgb(183, 221, 78);
+
+}
+.dropdown button{
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    font-weight: 700;
+   
+}
+.dropdown button a{
+    text-decoration: none;
+}
+
